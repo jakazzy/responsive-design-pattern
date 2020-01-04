@@ -1,3 +1,31 @@
+svg{
+    width:30px;
+    height: 30px;
+     margin: 2em;
+    fill:#a0a3a5;
+}
+#menu{
+    position: relative;
+    top:0.4em;
+    display:none;
+}
+.nav {
+    z-index: 10;
+    background-color: #fff;
+    width:300px;
+    position: absolute;
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    transition: transform 0.3s ease;
+}
+.nav.open{
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    transition: transform 0.3s ease;
+}
+.nav__item{
+ display: block;
+}
 @media screen and (min-width: 550px){
 .content {
     display:flex;
@@ -6,18 +34,41 @@
 
 .hero{
     width:60%;
-    order:-1
+
 }
 
-.weather{
+.top-news{
     width:40%;
-    order:-1
-}
-
 
 }
 
-@media screen and (min-width: 700px){}
+
+}
+@media screen and (max-width:549px){
+    .header__title{
+        font-size:2em;
+        padding-bottom:1em 1em 0 1em;
+        position: relative;
+        bottom:1em;
+    }
+    #menu{
+      display: inline;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .weather{
+        width: 50%;
+    }
+    .scores{
+        width: 50%;
+    }
+}
 
 
-@media screen and (min-width: 850px){}
+@media screen and (min-width: 850px){
+    .content,.nav__list,footer,header{
+        width:850px;
+        margin:0 auto;
+    }
+}

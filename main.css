@@ -225,6 +225,7 @@ main {
 
 .scores {
   padding-top: 1em;
+  width:100%;
 }
 
 .scores__table {
@@ -272,6 +273,7 @@ main {
 
 .weather {
   padding: 1em;
+  width:100%;
 }
 
 .weather__location {
