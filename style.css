@@ -1,0 +1,23 @@
+@media screen and (min-width: 550px){
+.content {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.hero{
+    width:60%;
+    order:-1
+}
+
+.weather{
+    width:40%;
+    order:-1
+}
+
+
+}
+
+@media screen and (min-width: 700px){}
+
+
+@media screen and (min-width: 850px){}
